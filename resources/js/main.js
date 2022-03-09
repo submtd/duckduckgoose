@@ -4,7 +4,7 @@ let networkId = document.head.querySelector('meta[name="network-id"]');
 let networkName = document.head.querySelector('meta[name="network-name"]');
 let contractAddress = document.head.querySelector('meta[name="contract-address"]');
 let contractAbi = document.head.querySelector('meta[name="contract-abi"]');
-let infuraId = document.head.querySelector('meta[name="infura-id"]');
+let infuraRpc = document.head.querySelector('meta[name="infura-rpc"]');
 // Bootstrap
 import "bootstrap";
 // Axios
@@ -30,5 +30,5 @@ createApp(App, {
     networkName: networkName.content,
     contractAddress: contractAddress.content,
     contractAbi: contractAbi.content,
-    infuraId: infuraId.content,
+    infuraRpc: infuraRpc.content,
 }).use(router).mount('#app');
