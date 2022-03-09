@@ -8,6 +8,7 @@
         <meta name="network-name" content="{{ $networkName }}">
         <meta name="contract-address" content="{{ $contractAddress }}">
         <meta name="contract-abi" content="{{ $contractAbi }}">
+        <meta name="infura-id" content="{{ $infuraId }}">
         <link href="https://fonts.googleapis.com" rel="preconnect">
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">

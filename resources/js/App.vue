@@ -77,7 +77,7 @@
                             </meta-mask>
                         </div>
                         <div class="col-md text-center">
-                            <wallet-connect type="button" data-bs-dismiss="modal" rpc="" ref="wallet-connect">
+                            <wallet-connect :infura-id="infuraId" type="button" data-bs-dismiss="modal" rpc="" ref="wallet-connect">
                                 <img class="img-fluid" src="/images/walletconnect.svg" alt="walletconnect">
                             </wallet-connect>
                         </div>
@@ -146,6 +146,7 @@
             'networkName',
             'contractAddress',
             'contractAbi',
+            'infuraId',
         ],
         data() {
             return {

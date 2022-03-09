@@ -17,6 +17,7 @@ class App extends Controller
             'networkName' => config('app.network_name', 'Rinkeby Testnet'),
             'contractAddress' => config('app.contract_address'),
             'contractAbi' => config('app.contract_abi'),
+            'infuraId' => config('app.infura_id'),
         ]);
     }
 }

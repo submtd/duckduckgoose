@@ -199,4 +199,5 @@ return [
     'tag_manager_container_id' => env('TAG_MANAGER_CONTAINER_ID'),
     'contract_address' => env('CONTRACT_ADDRESS'),
     'contract_abi' => env('CONTRACT_ABI'),
+    'infura_id' => env('INFURA_ID'),
 ];

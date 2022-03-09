@@ -8,13 +8,13 @@
     import WalletConnectProvider from '@walletconnect/web3-provider';
     export default {
         props: [
-            'rpc',
+            'infuraId',
         ],
         methods: {
             connect() {
                 try {
                     this.$parent.web3.setProvider(new WalletConnectProvider({
-                        rpc: this.rpc,
+                        infuraId: this.infuraId,
                     }));
                 } catch (error) {
                     this.$parent.alert = error.message;
