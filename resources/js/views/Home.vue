@@ -1,6 +1,9 @@
 <template>
     <div class="text-center">
-        <h1>DUCK, DUCK, GOOSE!</h1>
+        <img class="img-fluid" src="/images/banner.png" alt="banner">
+    </div>
+    <div class="text-center mb-5">
+        <h5>THE CLASSIC GAME OF DUCK, DUCK, GOOSE! ON THE POLYGON BLOCKCHAIN</h5>
         <h1 class="text-light bg-danger h4 p-2">HATCH A GOOSE AND WIN A PRIZE!</h1>
     </div>
     <div class="row mt-5">

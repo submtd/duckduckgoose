@@ -36,10 +36,6 @@
     </nav>
     <!-- END NAVIGATION -->
 
-    <!-- HEADER IMAGE -->
-    <div class="container-fluid header-container"></div>
-    <!-- END HEADER IMAGE -->
-
     <!-- BEGIN NOTICES -->
     <div v-show="notice" class="alert alert-success alert-dismissible fade show" role="alert">
         {{ notice }}
@@ -66,7 +62,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Connect Your Polygon Wallet</h5>
+                    <h6 class="modal-title">Connect Your Polygon Wallet</h6>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -75,11 +71,6 @@
                             <meta-mask type="button" data-bs-dismiss="modal" ref="meta-mask">
                                 <img class="img-fluid" src="/images/metamask.svg" alt="metamask">
                             </meta-mask>
-                        </div>
-                        <div class="col-md text-center">
-                            <wallet-connect :rpc="infuraRpc" type="button" data-bs-dismiss="modal" rpc="" ref="wallet-connect">
-                                <img class="img-fluid" src="/images/walletconnect.svg" alt="walletconnect">
-                            </wallet-connect>
                         </div>
                     </div>
                 </div>
