@@ -1,4 +1,4 @@
-name: web3
+name: duckduckgoose
 recipe: laravel
 config:
   php: '8.0'
