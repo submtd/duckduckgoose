@@ -25,18 +25,12 @@
                     </li>
                 </ul>
                 <!-- END PRIMARY NAVIGATION -->
-                <div class="d-flex">
-                    <ul class="navbar-nav ml-auto">
-                        <!-- BEGIN WALLET BUTTONS -->
-                        <li v-show="!connected" class="nav-item">
-                            <button class="btn btn-lg btn-success mx-1 col-12" data-bs-toggle="modal" data-bs-target="#connect">Connect Wallet</button>
-                        </li>
-                        <li v-show="connected" class="nav-item">
-                            <button class="btn btn-lg btn-warning mx-1 col-12" data-bs-toggle="modal" data-bs-target="#mint"><strong>MINT NOW</strong></button>
-                        </li>
-                        <!-- END WALLET BUTTONS -->
-                    </ul>
-                </div>
+            </div>
+            <div class="d-flex">
+                <!-- BEGIN WALLET BUTTONS -->
+                <button v-show="!connected" class="btn btn-lg btn-success mx-1 col-12" data-bs-toggle="modal" data-bs-target="#connect">Connect Wallet</button>
+                <button v-show="connected" class="btn btn-lg btn-warning mx-1 col-12" data-bs-toggle="modal" data-bs-target="#mint"><strong>MINT NOW</strong></button>
+                <!-- END WALLET BUTTONS -->
             </div>
         </div>
     </nav>
