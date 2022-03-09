@@ -1,3 +1,18 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 [v-cloak] > * { display: none; }
+p {
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+}
+.header-container {
+    background: url('/images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Press Start 2P';
+}

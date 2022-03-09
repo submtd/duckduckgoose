@@ -15,6 +15,8 @@ class App extends Controller
             'tagManagerContainerId' => config('app.tag_manager_container_id'),
             'networkId' => config('app.network_id', 4),
             'networkName' => config('app.network_name', 'Rinkeby Testnet'),
+            'contractAddress' => config('app.contract_address'),
+            'contractAbi' => config('app.contract_abi'),
         ]);
     }
 }

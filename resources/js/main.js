@@ -2,6 +2,8 @@
 let tagManagerContainerId = document.head.querySelector('meta[name="tag-manager-container-id"]');
 let networkId = document.head.querySelector('meta[name="network-id"]');
 let networkName = document.head.querySelector('meta[name="network-name"]');
+let contractAddress = document.head.querySelector('meta[name="contract-address"]');
+let contractAbi = document.head.querySelector('meta[name="contract-abi"]');
 // Bootstrap
 import "bootstrap";
 // Axios
@@ -25,4 +27,6 @@ import router from "./router";
 createApp(App, {
     networkId: networkId.content,
     networkName: networkName.content,
+    contractAddress: contractAddress.content,
+    contractAbi: contractAbi.content,
 }).use(router).mount('#app');
